@@ -15,6 +15,7 @@ body {
     width: 40%;
     position: relative;
 }
+/* the logo div that contains the logo img and the logo text */
 .logo {
     display: flex;
     background-color: rgba(0, 0, 0, 0.4);
@@ -30,6 +31,7 @@ body {
     font-size: 4rem;
     letter-spacing: 0.5rem;
 }
+/* credit text for the background image with the link to the creator   */
 .left-Section > p {
     position: absolute;
     bottom: 0.1%;
@@ -50,11 +52,13 @@ body {
     display: flex;
     flex-direction: column;
 }
+/* info text on top of the form */
 .text-container {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 7rem 2.5rem 3rem 2.5rem;
 }
+/* the form div with it's elements */
 .form-items {
     display: flex;
     background-color: white;
@@ -75,16 +79,11 @@ legend {
     height: 1.6rem;
     border: 1px solid #E5E7EB;
     border-radius: 5px;
-    /*box-shadow: 0 0 5pt 2pt #D3D3D3;*/
 }
 .form-items input:focus {
     outline: none;
     border: 1px solid #89b0ff;
     box-shadow: 0 0 5pt 2pt #D3D3D3;
-}
-.err-msg {
-    color: red;
-    font-size: 0.8rem;
 }
 .form-group {
     margin-bottom: 1rem;
@@ -95,7 +94,12 @@ legend {
 .right-form {
     margin: 4.97rem 0 0 0;
 }
-
+/* error message for password confirmation */
+.err-msg {
+    color: red;
+    font-size: 0.8rem;
+}
+/* CSS for the fancy button */
 .container-btn {
     width: 180px;
     height: 60px;
@@ -151,6 +155,7 @@ svg {
     transition: 1s ease-in-out;
     color: white;
 }
+/* text for log in */
 .right-Section > p {
     margin-left: 3.2rem;
     margin-top: 2px;
