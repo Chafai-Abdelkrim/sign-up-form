@@ -7,11 +7,12 @@ body {
 .container {
     display: flex;
 }
+/*left section with the background image*/
 .left-Section {
     background-image: url(img/railway.jpg) ;
     background-size: cover;
     height: 100vh;
-    width: 35%;
+    width: 40%;
     position: relative;
 }
 .logo {
@@ -40,21 +41,123 @@ body {
     color: wheat;
     font-style: italic;
 }
+/*right section with the form */
 .right-Section {
     font-family: 'Poppins', sans-serif;
     background-color: whitesmoke;
     height: 100vh;
-    width: 65%;
+    width: 60%;
     display: flex;
     flex-direction: column;
 }
 .text-container {
     font-size: 1.5rem;
+    font-weight: bold;
     margin: 7rem 2.5rem 3rem 2.5rem;
 }
 .form-items {
+    display: flex;
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     border-radius: 15px;
-    
+    gap: 10%;
+}
+legend {
+    font-size: 1.5rem;
+    margin: 0 0 1.3rem 0;
+}
+.form-items label {
+    font-size: 0.9rem;
+    color: #696969;
+}
+.form-items input {
+    width: 15rem;
+    height: 1.6rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    /*box-shadow: 0 0 5pt 2pt #D3D3D3;*/
+}
+.form-items input:focus {
+    outline: none;
+    border: 1px solid #89b0ff;
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+}
+.err-msg {
+    color: red;
+    font-size: 0.8rem;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.left-form {
+    margin: 1.5rem 0 1.5rem 3rem;
+}
+.right-form {
+    margin: 4.97rem 0 0 0;
+}
+
+.container-btn {
+    width: 180px;
+    height: 60px;
+    margin: 5rem 0 0 8.8rem;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    width: 180px;
+    height: 60px;
+}
+  
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #E5E7EB;
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+  
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: #D3D3D3;
+}
+  
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+  
+.btn span {
+    color: black;
+    font-size: 18px;
+    font-weight: 100;
+}
+.btn:hover span{
+    transition: 1s ease-in-out;
+    color: white;
+}
+.right-Section > p {
+    margin-left: 3.2rem;
+    margin-top: 2px;
+    font-size: 1.1rem;
+}
+.right-Section > p > a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bolder;
 }
